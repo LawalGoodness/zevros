@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zevros Technologies</title>
+<meta name="description" content="Zevros Technologies builds software and hardware products in Nigeria: Totoco, Yum, Extra Dim and more.">
+<link rel="icon" href="assets/zevros-mark.svg" type="image/svg+xml">
+<meta property="og:title" content="Zevros Technologies">
+<meta property="og:description" content="Software and hardware products, built in Nigeria.">
+<meta property="og:image" content="assets/zevros-wordmark.png">
+<style>
+  :root {
+    --bg: #0B0F1A;
+    --panel: #121826;
+    --line: #232B3D;
+    --text: #E9E2D8;
+    --muted: #A99C8C;
+    --accent: #00C2A8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 72px 0 48px; border-bottom: 1px solid var(--line); }
+  header img { width: min(560px, 100%); height: auto; display: block; }
+  header p { font-size: 1.2rem; color: var(--muted); max-width: 620px; margin: 28px 0 0; }
+  h2 {
+    font-size: .8rem; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--accent); margin: 56px 0 20px;
+  }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 22px; display: flex; flex-direction: column;
+    text-decoration: none; color: inherit; transition: border-color .15s;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h3 { margin: 0 0 6px; font-size: 1.15rem; }
+  .card .tag { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
+  .card p { margin: 10px 0 16px; color: var(--muted); flex: 1; }
+  .card .go { color: var(--accent); font-weight: 600; font-size: .95rem; }
+  .about p { max-width: 680px; color: var(--muted); }
+  footer {
+    margin-top: 72px; padding: 28px 0 48px; border-top: 1px solid var(--line);
+    display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; color: var(--muted); font-size: .9rem;
+  }
+  footer img { width: 28px; height: 28px; }
+  footer a { color: var(--text); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="assets/zevros-wordmark.png" alt="Zevros Technologies" width="1200" height="194">
+    <p>We build software and hardware products in Nigeria: tools people use every day, from group chats with AI to screen dimmers to deciding what to cook.</p>
+  </header>
+
+  <h2>Products</h2>
+  <div class="grid">
+    <a class="card" href="https://totoco.cc">
+      <span class="tag">Web app</span>
+      <h3>Totoco</h3>
+      <p>One encrypted group chat for people and their AIs. Bring friends, classmates and teammates, and let Claude, ChatGPT or Gemini join in. Free, no account needed.</p>
+      <span class="go">totoco.cc →</span>
+    </a>
+    <a class="card" href="https://theyumapp.com">
+      <span class="tag">Web app</span>
+      <h3>Yum</h3>
+      <p>Recipes you can cook with what you already have, and Eggy to help you decide.</p>
+      <span class="go">theyumapp.com →</span>
+    </a>
+    <a class="card" href="https://github.com/LawalGoodness/extra-dim">
+      <span class="tag">Windows app</span>
+      <h3>Extra Dim</h3>
+      <p>Makes your Windows screen darker than its lowest brightness. Tiny, offline, with a floating moon bubble to switch it on and off.</p>
+      <span class="go">Download on GitHub →</span>
+    </a>
+    <a class="card" href="https://github.com/LawalGoodness/cad-portfolio">
+      <span class="tag">Engineering</span>
+      <h3>Programmatic CAD</h3>
+      <p>Five mechanical parts modelled in Python and checked against their drawings by 80 automated tests.</p>
+      <span class="go">View on GitHub →</span>
+    </a>
+  </div>
+
+  <section class="about">
+    <h2>About</h2>
+    <p>Zevros Technologies is a registered Nigerian business, founded in 2026 by Lawal Goodness, a mechatronics engineering student. It is the home for everything we build, in code and on the workbench.</p>
+  </section>
+
+  <footer>
+    <img src="assets/zevros-mark.svg" alt="">
+    <span>© 2026 Zevros Technologies</span>
+    <a href="https://www.linkedin.com/in/lawal-goodness/">LinkedIn</a>
+    <a href="https://github.com/LawalGoodness">GitHub</a>
+  </footer>
+</div>
+</body>
+</html>
