@@ -36,11 +36,16 @@
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
   .card {
     background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
-    padding: 22px; display: flex; flex-direction: column;
+    padding: 0 0 22px; overflow: hidden; display: flex; flex-direction: column;
     text-decoration: none; color: inherit; transition: border-color .15s;
   }
   .card:hover { border-color: var(--accent); }
-  .card h3 { margin: 0 0 6px; font-size: 1.15rem; }
+  .card .shot {
+    width: 100%; aspect-ratio: 40 / 21; object-fit: cover; display: block;
+    border-bottom: 1px solid var(--line); margin-bottom: 18px; background: #fff;
+  }
+  .card > :not(.shot) { margin-left: 22px; margin-right: 22px; }
+  .card h3 { margin-top: 0; margin-bottom: 6px; font-size: 1.15rem; }
   .card .tag { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
   .card p { margin: 10px 0 16px; color: var(--muted); flex: 1; }
   .card .go { color: var(--accent); font-weight: 600; font-size: .95rem; }
@@ -63,24 +68,28 @@
   <h2>Products</h2>
   <div class="grid">
     <a class="card" href="https://totoco.cc">
+      <img class="shot" src="assets/totoco.jpg" alt="Totoco home page: group chat, now with your AIs in it" width="800" height="420" loading="lazy">
       <span class="tag">Web app</span>
       <h3>Totoco</h3>
       <p>One encrypted group chat for people and their AIs. Bring friends, classmates and teammates, and let Claude, ChatGPT or Gemini join in. Free, no account needed.</p>
       <span class="go">totoco.cc →</span>
     </a>
     <a class="card" href="https://theyumapp.com">
+      <img class="shot" src="assets/yum.jpg" alt="Yum home page with Eggy and a food search box" width="800" height="420" loading="lazy">
       <span class="tag">Web app</span>
       <h3>Yum</h3>
       <p>Recipes you can cook with what you already have, and Eggy to help you decide.</p>
       <span class="go">theyumapp.com →</span>
     </a>
     <a class="card" href="https://github.com/LawalGoodness/extra-dim">
+      <img class="shot" src="assets/extra-dim.jpg" alt="Extra Dim settings panel over a dimmed Windows desktop" width="800" height="420" loading="lazy">
       <span class="tag">Windows app</span>
       <h3>Extra Dim</h3>
       <p>Makes your Windows screen darker than its lowest brightness. Tiny, offline, with a floating moon bubble to switch it on and off.</p>
       <span class="go">Download on GitHub →</span>
     </a>
     <a class="card" href="https://github.com/LawalGoodness/cad-portfolio">
+      <img class="shot" src="assets/cad.jpg" alt="Exploded view of a planetary gearbox modelled in Python" width="800" height="420" loading="lazy">
       <span class="tag">Engineering</span>
       <h3>Programmatic CAD</h3>
       <p>Five mechanical parts modelled in Python and checked against their drawings by 80 automated tests.</p>
